@@ -1,42 +1,83 @@
+
+.mainb{
+  background-color: #192119;
+}
+.p1{
+display:inline block;
+font-family: 'Roboto Mono', monospace;
+color:aquamarine;
+margin-left: auto;
+width: 50%;
+border: 3px solid green;
+padding: 10px;
+/* position: relative */
+top: -500px;
+}
+
+#fh1{
+display:inline block;
+font-family: 'Nosifer', cursive;
+font-size: 30px;
+letter-spacing: -0.4px;
+word-spacing: 3.8px;
+color: rgb(16,229,83);
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
+text-align: center;
+}
+.navbar-brand{
+font-family: 'Nosifer', cursive;
+font-size: 10px;
+letter-spacing: -0.4px;
+word-spacing: 3.8px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
+text-align: center;
+}
+.navbar-nav > li > .dropdown-menu 
+{ 
+  background-color: #625f5f;
+}
+
+.newsfeed{
+  display:inline block;
+  width: 20%;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  position: relative;
+  top: -200px;
+ 
+}
 .body1{
-    background-color:rgb(16,229,83);
-  }
-  #goat{
-    font-family: cursive;
-  }
-  #fh1{
-  font-family: 'Nosifer', cursive;
-  font-size: 30px;
-  letter-spacing: -0.4px;
-  word-spacing: 3.8px;
-  color: #000000;
-  font-weight: normal;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: uppercase;
-  text-align: center;
-  }
-  .navbar-brand{
-    font-family: 'Nosifer', cursive;
-  font-size: 10px;
-  letter-spacing: -0.4px;
-  word-spacing: 3.8px;
-  color: #000000;
-  font-weight: normal;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: uppercase;
-  text-align: center;
-  }
-  .navbar-nav > li > .dropdown-menu 
-  { 
-    background-color: #625f5f;
-  }
-  .resize{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+  display:inline block;
+}
+.b1 + .b2 {
+  margin-left: 10px;
+}
+.progress{
+  position: relative;
+  top:-200px;
+  left: 170px;
+  width:70%;
+}
+h3{
+color:aliceblue;
+}
+.Map{
+  display: inline-block;
+  margin-right: auto;
+  width: 30%;
+  max-width:fit-content;
+  max-height:fit-content;
+  position: relative;
+}
+h3{
+  color: black;
+}
