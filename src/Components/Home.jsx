@@ -25,11 +25,12 @@ function Home(props) {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet" />
-                
-    
+                <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
                 <title>Amazon Prime Z </title>
             </head>
-            <Nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <Nav class="navbar navbar-expand-lg navbar navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"> prime z</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -72,49 +73,54 @@ function Home(props) {
                 </div>
             </Nav>
             <div class='mainb'>
-                <div class="body1">
-                    <h1 id='fh1'> Amazon Prime Z </h1> <br /><br /><br />
-                    <div class='p1'> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident deserunt assumenda fugit
-                        dolore aut nam
-                        deleniti excepturi minima perferendis numquam corporis odit beatae, ut ullam odio tempore reprehenderit, quo
-                        rem.
-                        Ad ex necessitatibus molestias odio quae eligendi cum iusto assumenda ut nobis libero at quaerat consequatur
-                        accusamus, distinctio dolore voluptates error praesentium. Saepe inventore consequatur nihil at repudiandae
-                        laborum debitis.</p>
+                <div class='topcontainer'>
+
+                    <div class="body1">
+                        <h1 id='fh1'> Amazon Prime Z </h1> <br /><br /><br />
+                        <div class='p1'> <p>
+                            In the year 2069 an infected BigMac help spread a new virus throughout the world. The newly discovered Z virus turned people into zombies that ravaged the world. No one knows where the virus came from or why it turns people into zombies.
+                            Amazon, at the time as the world’s richest most prominent company, took control of the United States and established order. Amazon divided the remaining survivors into 3 factions and left the independent territory of Florida to its own resources. Amazon uses its new service, titled “Amazon Prime Z” to help the district and its residence keep up with inventory. It also allows new residents to join or change factions. Amazon watches from its headquarters afar as the residents of the factions struggle to survive, “Unable” to interfere, but always there to help
+                        </p>
+                        </div>
+                        {/* <Map /> */}
                     </div>
-                    {/* <Map /> */}
+                    <div class='zombie'> <img src={zombie} width="100" height="100" /></div>
+
                 </div>
-              <div class = 'zombie'> <img src={zombie} width="100" height = "100"/></div>
-                <div class='newsfeed'>
-                    <h3>Related Articles </h3>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" >
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                                <small>3 days ago</small>
-                            </div>
-                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                blandit.</p>
-                            <small>Donec id elit non mi porta.</small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                                <small class="text-muted">3 days ago</small>
-                            </div>
-                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                blandit.</p>
-                            <small class="text-muted">Donec id elit non mi porta.</small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                                <small class="text-muted">3 days ago</small>
-                            </div>
-                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                blandit.</p>
-                            <small class="text-muted">Donec id elit non mi porta.</small>
-                        </a>
+                <div class='middlecontainer'></div>
+                <div class='bottomcontainer'>
+                    <div class='newsfeed'>
+                        <h3 id='ra' >Related Articles </h3>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" >
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">List group item heading</h5>
+                                    <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
+                                    blandit.</p>
+                                <small>Donec id elit non mi porta.</small>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">List group item heading</h5>
+                                    <small class="text-muted">3 days ago</small>
+                                </div>
+                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
+                                    blandit.</p>
+                                <small class="text-muted">Donec id elit non mi porta.</small>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">List group item heading</h5>
+                                    <small class="text-muted">3 days ago</small>
+                                </div>
+                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
+                                    blandit.</p>
+                                <small class="text-muted">Donec id elit non mi porta.</small>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             </div>
