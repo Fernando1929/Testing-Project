@@ -4,6 +4,7 @@
 }
 .p1{
 display:inline block;
+background-color: #625f5f;
 font-family: 'Roboto Mono', monospace;
 color:aquamarine;
 margin-left: auto;
@@ -27,6 +28,7 @@ font-style: normal;
 font-variant: normal;
 text-transform: uppercase;
 text-align: center;
+padding: 30px;
 }
 .navbar-brand{
 font-family: 'Nosifer', cursive;
@@ -50,9 +52,9 @@ text-align: center;
   display:inline block;
   width: 20%;
   margin-bottom: 100px;
-  margin-left: 50px;
+  margin-left: 0px;
   position: relative;
-  top: -200px;
+  top: 0px;
  
 }
 .body1{
@@ -80,4 +82,11 @@ color:aliceblue;
 }
 h3{
   color: black;
+  background-color: rgb(191, 193, 219);
+}
+.zombie{
+  display: inline-block;
+  max-width:auto;
+  max-height:auto;
+  position: relative;
 }

@@ -4,6 +4,7 @@ import "../App/App.css";
 import "../Pages/Home/home.css";
 import { Navbar, Nav, Button, Image, Dropdown } from "react-bootstrap";
 import Map from "./Map";
+import zombie from '/Users/kris/Documents/codes/awsprj/Testing-Project/src/zombie.png';
 
 function Home(props) {
     return (
@@ -24,6 +25,8 @@ function Home(props) {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet" />
+                
+    
                 <title>Amazon Prime Z </title>
             </head>
             <Nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -79,9 +82,9 @@ function Home(props) {
                         accusamus, distinctio dolore voluptates error praesentium. Saepe inventore consequatur nihil at repudiandae
                         laborum debitis.</p>
                     </div>
-                    <Map />
+                    {/* <Map /> */}
                 </div>
-
+              <div class = 'zombie'> <img src={zombie} width="100" height = "100"/></div>
                 <div class='newsfeed'>
                     <h3>Related Articles </h3>
                     <div class="list-group">
