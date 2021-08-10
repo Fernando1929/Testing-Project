@@ -74,9 +74,13 @@ function Home(props) {
             </Nav>
             <div class='mainb'>
                 <div class='topcontainer'>
-
+                    <div class='head'>
+                        <h1 id='header1' > Amazon Prime Z  </h1>
+                        Amazon today, amazon tomorrow, amazon forever
+                        <div class='zombie'> <img src={zombie} width="100" height="100" /></div>
+                    </div>
                     <div class="body1">
-                        <h1 id='fh1'> Amazon Prime Z </h1> <br /><br /><br />
+
                         <div class='p1'> <p>
                             In the year 2069 an infected BigMac help spread a new virus throughout the world. The newly discovered Z virus turned people into zombies that ravaged the world. No one knows where the virus came from or why it turns people into zombies.
                             Amazon, at the time as the world’s richest most prominent company, took control of the United States and established order. Amazon divided the remaining survivors into 3 factions and left the independent territory of Florida to its own resources. Amazon uses its new service, titled “Amazon Prime Z” to help the district and its residence keep up with inventory. It also allows new residents to join or change factions. Amazon watches from its headquarters afar as the residents of the factions struggle to survive, “Unable” to interfere, but always there to help
@@ -84,47 +88,14 @@ function Home(props) {
                         </div>
                         {/* <Map /> */}
                     </div>
-                    <div class='zombie'> <img src={zombie} width="100" height="100" /></div>
+
 
                 </div>
                 <div class='middlecontainer'></div>
                 <div class='bottomcontainer'>
-                    <div class='newsfeed'>
-                        <h3 id='ra' >Related Articles </h3>
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" >
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                    <small>3 days ago</small>
-                                </div>
-                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                    blandit.</p>
-                                <small>Donec id elit non mi porta.</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                    blandit.</p>
-                                <small class="text-muted">Donec id elit non mi porta.</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius
-                                    blandit.</p>
-                                <small class="text-muted">Donec id elit non mi porta.</small>
-                            </a>
-
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </div>
+            </div>s
+        </div >
 
 
     );
