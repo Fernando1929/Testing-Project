@@ -98,13 +98,7 @@ function Factions(props) {
 
             </div>
         </div>
-
-
     );
-
-
-
-
 
 }
 export default Factions;
