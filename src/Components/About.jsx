@@ -10,7 +10,7 @@ function About(props) {
     return (
         <body>
             {/* here html */}
-            <h1>About Us</h1>
+            <h1>About Us being here</h1>
         </body>
     );
 }
