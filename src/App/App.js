@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-ro
 import Home from "../Pages/Home/home";
 import Map from "../Pages/Map/map";
 import About from "../Pages/About/aboutus";
+import About from "../Pages/Factions/factions";
+
 import './App.css';
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
         <Route exact path = "/" render={() => <Home/>}/>
         <Route exact path = "/map" render={() => <Map/>}/>
         <Route exact path = "/aboutus" render ={() => <About/>}/>
+        <Route exact path = "/factions" render ={() => <Factions/>}/>
       </Switch>
     </Router>
       
