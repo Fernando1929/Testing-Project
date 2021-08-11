@@ -1,6 +1,6 @@
 import React from "react";
 import "./factions.css";
-import About from "../../Components/Factions";
+import Factions from "../../Components/Factions";
 
 function factions(){
 return (
