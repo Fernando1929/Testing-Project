@@ -8,8 +8,9 @@ import gdata1 from "../Pages/Map/b.js";
 
 let data = anychart.data.set([
   {'id': 'US.TX', 'value': 0, 'fill':'#FF0000'},
-  {'id': 'US.FL', 'value': 0, 'fill':'#039be5'},
-  {'id': 'US.NY', 'value': 0, 'fill':'orange'}
+  {'id': 'US.FL', 'value': 0, 'fill':'yellow'},
+  {'id': 'US.NY', 'value': 0, 'fill':'orange'},
+  {'id': 'US.CA', 'value': 0, 'fill':'#FF0000'}
 ]);
 
 function Map (props){
@@ -27,7 +28,7 @@ return(
           height={600}
           type="choropleth"
           data={data}
-          title="Map example"
+          title="Map of Factions"
           geoData='anychart.maps.united_states_of_america'
           borders="none"
           style={{backgroundColor:"grey"}}

@@ -10,7 +10,7 @@ function Factions(props) {
     return (
         <body>
             {/* here html */}
-            <h1>This is the factions page</h1>
+           // <h1>This is the factions page</h1>
         </body>
     );
 }
