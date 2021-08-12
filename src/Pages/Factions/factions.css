@@ -1,0 +1,6 @@
+
+/* changes map background color */
+g path {    
+    fill: rgb(0, 0, 0); 
+    stroke: none;
+}

@@ -1,0 +1,66 @@
+.top-container {
+  background-color: white;
+}
+.jump {
+  margin: 20px;
+  background-color: rgb(2, 2, 2);
+  color: azure;
+  max-width: 750px;
+  height: 500px;
+  padding: 10px;
+  font-family: "Playfair Display", serif;
+  font-family: "Share Tech Mono", monospace;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 35px;
+}
+#jp1 {
+  color: white;
+  padding-top: 50px;
+  font-size: 30px;
+}
+.middle-container {
+  background-color: black;
+  width: 1500px;
+  height: 500px;
+  margin-top: 100px;
+}
+.pro {
+  position: relative;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-family: "Share Tech Mono", monospace;
+  color: white;
+  padding-top: 130px;
+  font-size: 35px;
+}
+#prop {
+  position: relative;
+  right: 10px;
+}
+.progress {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 900px;
+}
+.bottom-container {
+  position: relative;
+  width: 1500px;
+  height: 500px;
+  text-align: center;
+}
+#gameP {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-family: "Share Tech Mono", monospace;
+  color: black;
+  margin-top: 100px;
+  font-size: 20px;
+  margin-bottom: 70px;
+}
