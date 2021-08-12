@@ -198,16 +198,25 @@ function Factions(props) {
     {/* The Factions Section */}
     <div
       className="w3-container w3-content w3-center w3-padding-"
-      style={{ maxWidth: 1000 }}
+      style={{ maxWidth: 1200  }}
       id="factions"
     >
       <h2 className="w3-wide">Amazon Prime Z</h2>
       <p className="w3-opacity">
         <i>Amazon today, amazon tomorrow, amazon forever</i>
-     
-     
       </p>
-      <p className="w3-justify ">
+
+      <img
+        src="amazonhq.jpg"
+        alt="Me"
+        className="w3-image"
+        style={{ display: "block", margin: "auto" }}
+        width={800}
+        height={533}
+      />
+
+      <p className="w3-justify">
+      
       In the year 2069 an infected BigMac help spread a new virus throughout the world. 
       The newly discovered Z virus turned people into zombies that ravaged the world. 
       No one knows where the virus came from or why it turns people into zombies. 
@@ -220,14 +229,7 @@ function Factions(props) {
       </p>
 
 
-      <img
-        src="amazonhq.jpg"
-        alt="Me"
-        className="w3-image"
-        style={{ display: "block", margin: "auto" }}
-        width={800}
-        height={533}
-      />
+      
 
  {/* Map of factions dimensions */}
       <html>
