@@ -163,7 +163,7 @@ function Factions(props) {
     >
       <h2 className="w3-wide">Amazon Prime Z</h2>
       <p className="w3-opacity">
-        <i><Brainz></Brainz></i>
+        <i>We love music</i>
       </p>
       <p className="w3-justify">
       In the year 2069 an infected BigMac help spread a new virus throughout the world. 
