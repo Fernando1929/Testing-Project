@@ -221,7 +221,7 @@ function Factions(props) {
 
 
       <img
-        src="amazon.jpg"
+        src="amazonhq.jpg"
         alt="Me"
         className="w3-image"
         style={{ display: "block", margin: "auto" }}
