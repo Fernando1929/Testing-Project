@@ -17,7 +17,6 @@ function App() {
         <Route exact path = "/" render={() => <Home/>}/>
         <Route exact path = "/login" render={() => <Login/>}/>
         <Route exact path = "/signup" render={() => <Signup/>}/>
-        <Route exact path = "/map" render={() => <Map/>}/>
         <Route exact path = "/aboutus" render ={() => <About/>}/>
         <Route exact path = "/factions" render ={() => <Factions/>}/>
       </Switch>

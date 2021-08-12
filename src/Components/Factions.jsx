@@ -6,11 +6,11 @@ import { render } from "react-dom";
 import "../App/App.css";
 import "../Pages/Home/home.css";
 import "../Pages/Factions/factions.css";
-import { Navbar, Nav, Button, Image, Dropdown } from "react-bootstrap";
+import { Nav, Button, Image, Dropdown } from "react-bootstrap";
 import Map from "./Map";
 //import zombie from '../images/zombie.png';
 import Stark from '../images/Stark.png';
-
+import Navbar  from "./Navbar";
 //important do not delete
 import AnyChart from 'anychart-react';
 import anychart from 'anychart';
@@ -47,117 +47,7 @@ function Factions(props) {
         '\nbody {font-family: "Lato", sans-serif}\n.mySlides {display: none}\n'
     }}
   />
-  {/* Navbar */}
-  <div className="w3-top">
-    <div className="w3-bar w3-black w3-card">
-      <a
-        className="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-        href="javascript:void(0)"
-        onclick="myFunction()"
-        title="Toggle Navigation Menu"
-      >
-        <i className="fa fa-bars" />
-      </a>
-      <a href="#" className="w3-bar-item w3-button w3-padding-large">
-        HOME
-      </a>
-      <a
-        href="#factions"
-        className="w3-bar-item w3-button w3-padding-large w3-hide-small"
-      >
-        FACTIONS
-      </a>
-      <a
-        href="#about-us"
-        className="w3-bar-item w3-button w3-padding-large w3-hide-small"
-      >
-        ABOUT US
-      </a>
-      <a
-        href="#tickets"
-        className="w3-bar-item w3-button w3-padding-large w3-hide-small"
-      >
-        INVENTORY
-      </a>
-      <a
-        href="#vaccine"
-        className="w3-bar-item w3-button w3-padding-large w3-hide-small"
-      >
-        VACCINE
-      </a>
-      <div className="w3-dropdown-hover w3-hide-small">
-        <button className="w3-padding-large w3-button" title="More">
-          MORE <i className="fa fa-caret-down" />
-        </button>
-        <div className="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" className="w3-bar-item w3-button">
-            Merchandise
-          </a>
-          <a href="#" className="w3-bar-item w3-button">
-            Extras
-          </a>
-          <a href="#" className="w3-bar-item w3-button">
-            Media
-          </a>
-        </div>
-      </div>
-      <a
-        href="javascript:void(0)"
-        className="w3-padding-large w3-hover-red w3-hide-small w3-right"
-      >
-        <i className="fa fa-search" />
-      </a>
-    </div>
-  </div>
-
-
-
-
-
-  {/* Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) */}
-  <div
-    id="navDemo"
-    className="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
-    style={{ marginTop: 46 }}
-  >
-    <a
-      href="#band"
-      className="w3-bar-item w3-button w3-padding-large"
-      onclick="myFunction()"
-    >
-      BAND
-    </a>
-    <a
-      href="#tour"
-      className="w3-bar-item w3-button w3-padding-large"
-      onclick="myFunction()"
-    >
-      TOUR
-    </a>
-    <a
-      href="#contact"
-      className="w3-bar-item w3-button w3-padding-large"
-      onclick="myFunction()"
-    >
-      CONTACT
-    </a>
-    <a
-      href="#"
-      className="w3-bar-item w3-button w3-padding-large"
-      onclick="myFunction()"
-    >
-      MERCH
-    </a>
-  </div>
-
-
-
-
-
-
-
-
-
+  <Navbar/>
 
   {/* Page content */}
   <div className="w3-content" style={{ maxWidth: 2000, marginTop: 46 }}>

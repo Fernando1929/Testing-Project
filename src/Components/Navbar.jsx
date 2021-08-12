@@ -37,10 +37,10 @@ function Navbar(props) {
         HOME
       </a>
       <a
-        href="/map"
+        href="/factions"
         className="w3-bar-item w3-button w3-padding-large w3-hide-small"
       >
-        MAP
+        FACTIONS
       </a>
       <a
         href="/aboutus"
