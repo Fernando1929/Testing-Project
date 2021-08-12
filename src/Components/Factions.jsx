@@ -52,7 +52,7 @@ function Factions(props) {
   <div className="w3-black w3-content " style={{ maxWidth: 2000, marginTop: 8 }}>
     {/* The Factions Section */}
     <div
-      className="w3-container w3-content w3-center w3-padding-32"
+      className="w3-container w3-content w3-center"
       style={{ maxWidth: 1500  }}
       id="factions" >
       
@@ -62,35 +62,35 @@ function Factions(props) {
 
 
 {/* Factions Section */}
-<div className="w3-container w3-padding-">
-      <h2 className="w3-border-bottom w3-border-light-grey w3-padding-16 w3-wide">
-        FACTIONS
-      </h2>
+<div className="w3-container">
 
-       {/* Header */}
+ {/* Header */}
   <header
     className="w3-display-container w3-content w3-wide"
-    style={{ maxWidth: 1500 }}
+    style={{ maxWidth: 2000 }}
     id="home"
   >
     <img
       className="w3-image"
       src="horde.jpg"
       alt="Architecture"
-      width={1500}
+      width={1800}
       height={800}
     />
     <div className="w3-display-middle w3-margin-top w3-center">
-      <h1 className="w3-xxlarge w3-text-white">
-        <span className="w3-padding w3-black w3-opacity-min">
-          <b>BR</b>
+      <h1 className="w3-xxxlarge w3-text-white">
+        <span className="w3-padding w3-orange w3-opacity-min">
+          <b>AZ</b>
         </span>{" "}
-        <span className="w3-hide-small w3-text-light-grey">Architects</span>
+        <span className="w3-hide-small w3-text-light-grey">Survive</span>
       </h1>
     </div>
   </header>
 
-
+ {/* Factions */} 
+      <h2 className="w3-border-bottom  w3-padding-64 w3-wide">
+        FACTIONS
+      </h2>
       <p className="w3-justify">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -127,7 +127,7 @@ function Factions(props) {
         out of all factions, so zombie attacks are generally contained. 
         </p>
         <p>
-         
+      
         </p>
       </div>
       <div className="w3-col l3 m6 w3-margin-bottom w3-padding-64">
@@ -141,7 +141,6 @@ function Factions(props) {
         The people of the south live by the motto “Fire and blood”. 
         </p>
         <p>
-          
         </p>
       </div>
 
@@ -157,11 +156,13 @@ function Factions(props) {
          southern faction to steal resources and to cause general mayhem. That’s why no one liked Florida. 
         </p>
       </div>
-
     </div>
-
-
   </div>
+
+
+
+
+
 
  {/* Map of factions dimensions */}
  <html>
