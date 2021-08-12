@@ -82,8 +82,6 @@ function Factions(props) {
       </div>
     </div>
 
-
-
     {/* The Factions Section */}
     <div
       className="w3-container w3-content w3-center w3-padding-"
@@ -116,8 +114,6 @@ function Factions(props) {
       It also allows new residents to join or change factions. Amazon watches from its headquarters afar 
       as the residents of the factions struggle to survive, “Unable” to interfere, but always there to help
       </p>
-
-
       
 
  {/* Map of factions dimensions */}
@@ -126,9 +122,9 @@ function Factions(props) {
     </head>
     <body>
       <div id="ac-chart"  style={{ 
-        display: "block",
+        display: "inline-block",
         textAlign: "center",
-        border:"none"}}>
+        border:"none",}}>
       <AnyChart
           width={800}
           height={600}
@@ -137,7 +133,7 @@ function Factions(props) {
           title="Map of Factions"
           geoData='anychart.maps.united_states_of_america'
           borders="none"
-          style={{backgroundColor:"grey"}}
+          style={{ backgroundColor:'red',}}
         /></div>
     </body>
   </html>
