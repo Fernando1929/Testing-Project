@@ -27,7 +27,6 @@ let data = anychart.data.set([
   {'id': 'US.TX', 'value': 12, 'fill':'#FF0000'},
 ]);
 
-
 function Factions(props) {
 
   return(

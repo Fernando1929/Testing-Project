@@ -2,9 +2,8 @@
 import React from "react";
 import "../App/App.css";
 import "../Pages/Home/home.css";
-import { Navbar, Nav, Button, Image, Dropdown } from "react-bootstrap";
-import Map from "./Map";
-import zombie from '../images/zombie.png';
+import { Nav, Button, Image, Dropdown } from "react-bootstrap";
+import Navbar from "./Navbar";
 
 function About(props) {
     return (

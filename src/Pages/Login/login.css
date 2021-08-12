@@ -1,0 +1,11 @@
+.notice{
+color: red;
+font-size: smaller;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: auto;
+  padding-top: 20px;
+}
