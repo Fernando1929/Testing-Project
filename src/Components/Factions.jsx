@@ -11,6 +11,7 @@ import Map from "./Map";
 //import zombie from '../images/zombie.png';
 import Stark from '../images/Stark.png';
 import Navbar  from "./Navbar";
+import Footer  from "./Footer";
 //important do not delete
 import AnyChart from 'anychart-react';
 import anychart from 'anychart';
@@ -371,76 +372,6 @@ function Factions(props) {
         </div>
       </div>
     </div>
-
-
-
-    {/* The Vaccine Section */}
-    <div
-      className="w3-container w3-content w3-padding-64"
-      style={{ maxWidth: 800 }}
-      id="vaccine"
-    >
-      <h2 className="w3-wide w3-center">CONTACT</h2>
-      <p className="w3-opacity w3-center">
-        <i>Fan? Drop a note!</i>
-      </p>
-      <div className="w3-row w3-padding-32">
-        <div className="w3-col m6 w3-large w3-margin-bottom">
-          <i className="fa fa-map-marker" style={{ width: 30 }} /> Chicago, US
-          <br />
-          <i className="fa fa-phone" style={{ width: 30 }} /> Phone: +00 151515
-          <br />
-          <i className="fa fa-envelope" style={{ width: 30 }}>
-            {" "}
-          </i>{" "}
-          Email: mail@mail.com
-          <br />
-        </div>
-        <div className="w3-col m6">
-          <form action="/action_page.php" target="_blank">
-            <div
-              className="w3-row-padding"
-              style={{ margin: "0 -16px 8px -16px" }}
-            >
-              <div className="w3-half">
-                <input
-                  className="w3-input w3-border"
-                  type="text"
-                  placeholder="Name"
-                  required
-                  name="Name"
-                />
-              </div>
-              <div className="w3-half">
-                <input
-                  className="w3-input w3-border"
-                  type="text"
-                  placeholder="Email"
-                  required
-                  name="Email"
-                />
-              </div>
-            </div>
-            <input
-              className="w3-input w3-border"
-              type="text"
-              placeholder="Message"
-              required
-              name="Message"
-            />
-            <button
-              className="w3-button w3-black w3-section w3-right"
-              type="submit"
-            >
-              SEND
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-    {/* End Page Content */}
-
-
   </div>
   {/* Image of location/map */}
   <img
@@ -448,21 +379,7 @@ function Factions(props) {
     className="w3-image w3-greyscale-min"
     style={{ width: "10%" }}
   />
-  {/* Footer */}
-  <footer className="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-    <i className="fa fa-facebook-official w3-hover-opacity" />
-    <i className="fa fa-instagram w3-hover-opacity" />
-    <i className="fa fa-snapchat w3-hover-opacity" />
-    <i className="fa fa-pinterest-p w3-hover-opacity" />
-    <i className="fa fa-twitter w3-hover-opacity" />
-    <i className="fa fa-linkedin w3-hover-opacity" />
-    <p className="w3-medium">
-      Powered by{" "}
-      <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">
-        w3.css
-      </a>
-    </p>
-  </footer>
+  <Footer/>
 </div>
 
   );

@@ -46,8 +46,7 @@ return(
           data={data}
           title="Map of Factions"
           geoData='anychart.maps.united_states_of_america'
-          borders="none"
-          style={{backgroundColor:"grey"}}
+          Style={{fill:"#FF0000"}}
         /></div>
     </body>);
 }
