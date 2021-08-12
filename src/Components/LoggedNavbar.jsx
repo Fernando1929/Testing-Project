@@ -36,28 +36,21 @@ function LoggedNavbar(props) {
       </a>
       
       <a href="/" className="w3-bar-item w3-button w3-padding-large">
-        HOME
+        FACTION
       </a>
       <a
         href="/factions"
         className="w3-bar-item w3-button w3-padding-large w3-hide-small"
       >
-        FACTIONS
+        INVENTORY
       </a>
       <a
         href="/aboutus"
         className="w3-bar-item w3-button w3-padding-large w3-hide-small"
       >
-          VACCINE
+          SEARCH
       </a>
-      <a
-        href="/aboutus"
-        className="w3-bar-item w3-button w3-padding-large w3-hide-small"
-      >
-        ABOUT
-      </a>
-      <a href="/login" className="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-right">Login</a>
-    <a href="/signup" className="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-right">Sign Up</a>
+      <a href="/logout" className="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-right">Logout</a>
     </div>
     </div>
     {/* Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) */}
