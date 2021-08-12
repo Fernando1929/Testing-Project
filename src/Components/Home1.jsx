@@ -36,34 +36,11 @@ function Home1(props) {
   <Navbar/>
   {/* Page content */}
   <div className="w3-black w3-content" style={{ maxWidth: 2000, marginTop: 8 }}>
-    {/* Automatic Slideshow Images */}
-    <div className="mySlides w3-display-container w3-center">
-      <img src="zombie.png" style={{ width: "100%" }} />
-      <div className="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>Los Angeles</h3>
-        <p>
-          <b>We had the best time playing at Venice Beach!</b>
-        </p>
-      </div>
-    </div>
-    <div className="mySlides w3-display-container w3-center">
-    <img src="zombie.png" style={{ width: "100%" }} />
-      <div className="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>New York</h3>
-        <p>
-          <b>The atmosphere in New York is lorem ipsum.</b>
-        </p>
-      </div>
-    </div>
-    <div className="mySlides w3-display-container w3-center">
-    <img src="zombie.png" style={{ width: "100%" }} />
-      <div className="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>Chicago</h3>
-        <p>
-          <b>Thank you, Chicago - A night we won't forget.</b>
-        </p>
-      </div>
-    </div>
+
+
+ 
+
+
     {/* The Band Section */}
     <div
       className="w3-container w3-content w3-center w3-padding-64"
@@ -72,9 +49,20 @@ function Home1(props) {
     >
       <h2 className="w3-wide">Amazon Prime Z</h2>
       <p className="w3-opacity">
-        <i>We love music</i>
+        <i>Amazon today, amazon tomorrow, amazon forever</i>
       </p>
-      <p className="w3-justify">
+
+      <img
+        src="amazonhq.jpg"
+        alt="Me"
+        className="w3-image"
+        style={{ display: "block", margin: "auto" }}
+        width={900}
+        height={533}
+      />
+
+      <p className="w3-justify w3-padding-64">
+
       In the year 2069 an infected BigMac help spread a new virus throughout the world. 
       The newly discovered Z virus turned people into zombies that ravaged the world. 
       No one knows where the virus came from or why it turns people into zombies. 
@@ -86,7 +74,7 @@ function Home1(props) {
       as the residents of the factions struggle to survive, “Unable” to interfere, but always there to help
 
       </p>
-      <div className="w3-row w3-padding-32">
+      <div className="w3-row w3-padding-64">
         <div className="w3-third">
           <p>The North</p>
           <img
@@ -116,6 +104,9 @@ function Home1(props) {
         </div>
       </div>
     </div>
+   
+   
+   
     {/* The Tour Section */}
     <div className="" id="tour">
       <div
