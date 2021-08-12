@@ -1,4 +1,3 @@
-
 import React from "react";
 import "../App/App.css";
 import "../Pages/Home/home.css";
@@ -27,49 +26,116 @@ function About(props) {
         }}
       />
       {/* Page content */}
-      <div className="w3-black w3-content" style={{ maxWidth: 2000, marginTop: 8 }}>
-    
-    
-     
-    
-    
-        {/* The Band Section */}
-        <div
-          className="w3-container w3-content w3-center w3-padding-64"
-          style={{ maxWidth: 800 }}
-          id="band"
-        >
-          <h2 className="w3-wide">Amazon Prime Z</h2>
-          <p className="w3-opacity">
-            <i>Amazon today, amazon tomorrow, amazon forever</i>
-          </p>
-    
-          <img
-            src="amazonhq.jpg"
-            alt="Me"
-            className="w3-image"
-            style={{ display: "block", margin: "auto" }}
-            width={900}
-            height={533}
-          />
-    
-          <p className="w3-justify w3-padding-64">
-    
-          In the year 2069 an infected BigMac help spread a new virus throughout the world. 
-          The newly discovered Z virus turned people into zombies that ravaged the world. 
-          No one knows where the virus came from or why it turns people into zombies. 
-          Amazon, at the time as the world’s richest most prominent company, took control of the 
-          United States and established order. Amazon divided the remaining survivors into 3 factions 
-          and left the independent territory of Florida to its own resources. Amazon uses its new 
-          service, titled “Amazon Prime Z” to help the district and its residence keep up with inventory.
-          It also allows new residents to join or change factions. Amazon watches from its headquarters afar 
-          as the residents of the factions struggle to survive, “Unable” to interfere, but always there to help
-          </p>
-          
+      <div className="w3-black w3-content" style={{ maxWidth: 2000, marginTop: 0 }}>
+        
+          <div className="w3-container" id="designers" style={{ marginTop: 0 }}>
+      <h1 className="w3-xxxlarge w3-text-White">
+        <b>Meet the team</b>
+      </h1>
+      <hr style={{ width: 720}} className="w3-round" />
+      <p>
+        Meeting during our Internship program, we easily connected and had the
+        trust to rely on each others ability. Everyone coming from a tech
+        background from our undergrads, we all knew how to approach this end of
+        program challenge. Working with everyone on the team has been a great
+        and smooth experience. Not really knowing each other before the
+        Internship challenge, we still managed to connect and rely on each other
+        the first day to tackle this project.
+      </p>
+    </div>
 
-          
 
+    {/* The Team */}
+    <div className="w3-row-padding w3-grayscale">
+      <div className="w3-col m4 w3-margin-bottom">
+        <div className="w3-light-grey">
+          <img src= "alancavazos.png" alt="Alan" style={{ width: "100%" }} />
+          <div className="w3-container">
+            <h3>Roberto Alan Cavazos</h3>
+            <p>Technology Management Student at Texas A&amp;M University '22</p>
+            <strong>Phone: </strong> +1 (956) 235-1426
+            <p />
+            <p>
+              <strong>Email: </strong> alancavazos@tamu.edu
+            </p>
+          </div>
         </div>
+      </div>
+      <div className="w3-col m4 w3-margin-bottom">
+        <div className="w3-light-grey">
+          <img src="krisholmes.jpeg" alt="Kris" style={{ width: "100%" }} />
+          <div className="w3-container">
+            <h3>Kris Holmes</h3>
+            <p>
+              Computer Science Student at The University of Texas at San Antonio
+              '22
+            </p>
+            <strong>Phone: </strong> +1 (832) 647-5192
+            <p>
+              <strong>Email: </strong> Krisholmes444@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="w3-col m4 w3-margin-bottom">
+        <div className="w3-light-grey">
+          <img src="nomarmedina.jpg" alt="Nomar" style={{ width: "100%" }} />
+          <div className="w3-container">
+            <h3>Nomar Medina Davila</h3>
+            <p>
+              Software Engineering Student at University of Puerto Rico -
+              Mayagüez '21
+            </p>
+            <p>
+              <strong>Phone: </strong> +1 (787) 514-7280
+            </p>
+            <p>
+              <strong>Email: </strong> nomar.medina@upr.edu
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="w3-col m4 w3-margin-bottom">
+        <div className="w3-light-grey">
+          <img src="angelpinto.jpg" alt="Angel" style={{ width: "100%" }} />
+          <div className="w3-container">
+            <h3>Angel Pinto</h3>
+            <p>
+              Computer Engineering student at Polytechnic University of Puerto
+              Rico '22 '21
+            </p>
+            <p>
+              <strong>Phone: </strong> +1 (939) 319-5816
+            </p>
+            <p>
+              <strong>Email: </strong> pinto_101205@students.pupr.edu
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="w3-col m4 w3-margin-bottom">
+        <div className="w3-light-grey">
+          <img src="luisfernando.jpeg" alt="Fernando" style={{ width: "100%" }} />
+          <div className="w3-container">
+            <h3>Luis Fernando Quiles</h3>
+            <p>
+              Computer Engineering Student at University of Puerto Rico -
+              Mayagüez '21
+            </p>
+            <p>
+              <strong>Phone: </strong> +1 (787) 240-2517
+            </p>
+            <p>
+              <strong>Email: </strong> leuis.quiles1@upr.edu
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          
+
+        
       </div>
     </div>
     
