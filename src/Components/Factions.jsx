@@ -44,12 +44,13 @@ function Factions(props) {
   />
 
   {/* Page content */}
-  <div className="w3-content" style={{ maxWidth: 2000, marginTop: 0 }}>
+  <div className="w3-content" 
+  style={{ maxWidth: 2000, marginTop: 0 }}>
    
    
    
-    {/* Container 1 */}
-    <div className="w3-container w3-content w3-center"
+    {/* Container 1 image header */}
+    <div className="w3-container w3-content w3-center w3-black"
       style={{ maxWidth: 1500  }} >
     
             {/* Header */}
@@ -81,14 +82,14 @@ function Factions(props) {
 
 
  {/* Container 2*/} 
- <div className="w3-container w3-content w3-center w3-black"
+ <div className="w3-container w3-content w3-center w3-padding-32"
       style={{ maxWidth: 1500}} >
  
-      <h2 className="w3-border-bottom w3-content w3-center w3-wide"
-      style={{ maxWidth: 800}}>
+      <h2 className="w3-border-bottom   w3-wide">
         FACTIONS
       </h2>
-      <p className="w3-justify">
+      <p className=" w3-content w3-center w3-justify "
+      style={{ maxWidth: 800}}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -163,7 +164,6 @@ function Factions(props) {
 
 
  {/* Map of factions dimensions */}
-
       <div id="ac-chart"  style={{ 
         display: "inline-block",
         textAlign: "center",
@@ -171,7 +171,6 @@ function Factions(props) {
         <Map/> 
      </div>
   </div>
- {/* End Page Content */}
 
 
   
