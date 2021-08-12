@@ -8,10 +8,24 @@ import "../Pages/Home/home.css";
 import "../Pages/Factions/factions.css";
 import { Navbar, Nav, Button, Image, Dropdown } from "react-bootstrap";
 import Map from "./Map";
-import zombie from '../images/zombie.png';
+//import zombie from '../images/zombie.png';
+import Stark from '../images/Stark.png';
 
+//important do not delete
+import AnyChart from 'anychart-react';
+import anychart from 'anychart';
+import gdata1 from "../Pages/Map/b.js";
+//important do not delete
 
+let data = anychart.data.set([
+  
+  {'id': 'US.FL', 'value': 0, 'fill':'yellow'},
 
+  {'id': 'US.NY', 'value': 0, 'fill':'blue'},
+  {'id': 'US.CA', 'value': 0, 'fill':'#FF0000'},
+  {'id': 'US.NV', 'value': 0, 'fill':'#FF0000'},
+  {'id': 'US.TX', 'value': 12, 'fill':'#FF0000'},
+]);
 
 
 function Factions(props) {
@@ -49,22 +63,28 @@ function Factions(props) {
         HOME
       </a>
       <a
-        href="#band"
+        href="#factions"
         className="w3-bar-item w3-button w3-padding-large w3-hide-small"
       >
-        BAND
+        FACTIONS
       </a>
       <a
-        href="#tour"
+        href="#about-us"
         className="w3-bar-item w3-button w3-padding-large w3-hide-small"
       >
-        TOUR
+        ABOUT US
       </a>
       <a
-        href="#contact"
+        href="#tickets"
         className="w3-bar-item w3-button w3-padding-large w3-hide-small"
       >
-        CONTACT
+        INVENTORY
+      </a>
+      <a
+        href="#vaccine"
+        className="w3-bar-item w3-button w3-padding-large w3-hide-small"
+      >
+        VACCINE
       </a>
       <div className="w3-dropdown-hover w3-hide-small">
         <button className="w3-padding-large w3-button" title="More">
@@ -90,6 +110,11 @@ function Factions(props) {
       </a>
     </div>
   </div>
+
+
+
+
+
   {/* Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) */}
   <div
     id="navDemo"
@@ -125,8 +150,20 @@ function Factions(props) {
       MERCH
     </a>
   </div>
+
+
+
+
+
+
+
+
+
+
   {/* Page content */}
   <div className="w3-content" style={{ maxWidth: 2000, marginTop: 46 }}>
+
+    
     {/* Automatic Slideshow Images */}
     <div className="mySlides w3-display-container w3-center">
       <img src="zombie.png" style={{ width: "100%" }} />
@@ -155,17 +192,22 @@ function Factions(props) {
         </p>
       </div>
     </div>
-    {/* The Band Section */}
+
+
+
+    {/* The Factions Section */}
     <div
-      className="w3-container w3-content w3-center w3-padding-64"
-      style={{ maxWidth: 800 }}
-      id="band"
+      className="w3-container w3-content w3-center w3-padding-"
+      style={{ maxWidth: 1000 }}
+      id="factions"
     >
       <h2 className="w3-wide">Amazon Prime Z</h2>
       <p className="w3-opacity">
-        <i>We love music</i>
+        <i>Amazon today, amazon tomorrow, amazon forever</i>
+     
+     
       </p>
-      <p className="w3-justify">
+      <p className="w3-justify ">
       In the year 2069 an infected BigMac help spread a new virus throughout the world. 
       The newly discovered Z virus turned people into zombies that ravaged the world. 
       No one knows where the virus came from or why it turns people into zombies. 
@@ -175,40 +217,117 @@ function Factions(props) {
       service, titled “Amazon Prime Z” to help the district and its residence keep up with inventory.
       It also allows new residents to join or change factions. Amazon watches from its headquarters afar 
       as the residents of the factions struggle to survive, “Unable” to interfere, but always there to help
-
       </p>
-      <div className="w3-row w3-padding-32">
-        <div className="w3-third">
-          <p>The North</p>
-          <img
-            src="zombie.png"
-            className="w3-round w3-margin-bottom"
-            alt="The North"
-            style={{ width: "60%" }}
-          />
-        </div>
-        <div className="w3-third">
-          <p>The South</p>
-          <img
-            src="zombie.png"
-            className="w3-round w3-margin-bottom"
-            alt="Random Name"
-            style={{ width: "60%" }}
-          />
-        </div>
-        <div className="w3-third">
-          <p>The East</p>
-          <img
-            src="zombie.png"
-            className="w3-round"
-            alt="Random Name"
-            style={{ width: "60%" }}
-          />
-        </div>
+
+
+
+
+ {/* Map of factions dimensions */}
+      <html>
+    <head>
+    </head>
+    <body>
+      <div id="ac-chart"  style={{ 
+        display: "block",
+        textAlign: "center",
+        border:"none"}}>
+      <AnyChart
+          width={800}
+          height={600}
+          type="choropleth"
+          data={data}
+          title="Map of Factions"
+          geoData='anychart.maps.united_states_of_america'
+          borders="none"
+          style={{backgroundColor:"grey"}}
+        /></div>
+    </body>
+  </html>
+{/*End Map of factions dimensions */}
+
+
+{/* About Section */}
+<div className="w3-container w3-padding-32" id="about">
+      <h1 className="w3-border-bottom w3-border-light-grey w3-padding-16">
+        FACTIONS
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt
+        in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <div className="w3-row-padding w3-grayscale">
+      <div className="w3-col l3 m6 w3-margin-bottom">
+        <img src="zombie.png" alt="John" style={{ width: "100%" }} />
+        <h2>The North</h2>
+        <p className="w3-opacity "> Winter is comming</p>
+        <p>
+        The northern territories are made up of small communities that strive on survival skills.
+        Hunting and farming are the main way to stay alive. But harsh winters make most 
+        crops unavailable and boarders hard to maintain. Even so the northern people are strong and resilient.
+        </p>
+        <p>
+          <button className="w3-button w3-light-grey w3-block">Contact</button>
+        </p>
+      </div>
+      <div className="w3-col l3 m6 w3-margin-bottom">
+        <img src="zombie.png" alt="Jane" style={{ width: "100%" }} />
+        <h2>The East</h2>
+        <p className="w3-opacity">I'm Walkin' here! &amp; Unbowed, Unbent, Unbroken</p>
+        <p>
+        The eastern territories are made up of large cities and population centers. 
+        They survive on a combination of hunting, fishing and trading with the other. 
+        Although the have the largest population,they also have the most fortified borders 
+        out of all factions, so zombie attacks are generally contained. 
+        </p>
+        <p>
+          <button className="w3-button w3-light-grey w3-block">Contact</button>
+        </p>
+      </div>
+      <div className="w3-col l3 m6 w3-margin-bottom">
+        <img src="zombie.png" alt="Mike" style={{ width: "100%" }} />
+        <h2>The South</h2>
+        <p className="w3-opacity">Fire and Blood</p>
+        <p>
+        The Southern territories are a harsh a baron wasteland. The people of the south are in constant battle 
+        with the zombie hoards that attempt to migrate south, escaping the cold winters of the north and east. 
+        They survive mostly on livestock and weapons trading with the northern and eastern factions.
+        The people of the south live by the motto “Fire and blood”. 
+        </p>
+        <p>
+          <button className="w3-button w3-light-grey w3-block">Contact</button>
+        </p>
+      </div>
+      <div className="w3-col l3 m6 w3-margin-bottom">
+        <img src="zombie.png" alt="Dan" style={{ width: "100%" }} />
+        <h2>Florida</h2>
+        <p className="w3-opacity">Gone to FLorida. Be back never</p>
+        <p>
+        For many years the territory of Florida (named after the former state of Florida) 
+        was cut off from the rest of the factions, Amazon HQ only kept watch from afar. 
+        As a result Florida developed into a land of misfits and outlaws that survive by any 
+        means necessary. The people of Florida constantly invade the
+         southern faction to steal resources and to cause general mayhem. That’s why no one liked Florida. 
+        </p>
+        <p>
+          <button className="w3-button w3-light-grey w3-block">Contact</button>
+        </p>
       </div>
     </div>
-    {/* The Tour Section */}
-    <div className="w3-black" id="tour">
+
+
+  </div>
+
+
+
+    {/* The About us Section */}
+    <div className="w3-black" id="about-us">
       <div
         className="w3-container w3-content w3-padding-64"
         style={{ maxWidth: 800 }}
@@ -302,7 +421,9 @@ function Factions(props) {
         </div>
       </div>
     </div>
-    {/* Ticket Modal */}
+
+
+    {/* Inventory seccion */}
     <div id="ticketModal" className="w3-modal">
       <div className="w3-modal-content w3-animate-top w3-card-4">
         <header className="w3-container w3-teal w3-center w3-padding-32">
@@ -356,11 +477,14 @@ function Factions(props) {
         </div>
       </div>
     </div>
-    {/* The Contact Section */}
+
+
+
+    {/* The Vaccine Section */}
     <div
       className="w3-container w3-content w3-padding-64"
       style={{ maxWidth: 800 }}
-      id="contact"
+      id="vaccine"
     >
       <h2 className="w3-wide w3-center">CONTACT</h2>
       <p className="w3-opacity w3-center">
@@ -421,12 +545,14 @@ function Factions(props) {
       </div>
     </div>
     {/* End Page Content */}
+
+
   </div>
   {/* Image of location/map */}
   <img
-    src="/w3images/map.jpg"
+    src="zombie.png"
     className="w3-image w3-greyscale-min"
-    style={{ width: "100%" }}
+    style={{ width: "10%" }}
   />
   {/* Footer */}
   <footer className="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
