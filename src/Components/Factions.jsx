@@ -75,7 +75,7 @@ function Factions(props) {
   >
     <img
       className="w3-image"
-      src="amazonhq.jpg"
+      src="horde.jpg"
       alt="Architecture"
       width={1500}
       height={800}
@@ -185,9 +185,6 @@ function Factions(props) {
     </body>
   </html>
 {/*End Map of factions dimensions */}
-
-
-
 
   </div>
  {/* End Page Content */}
