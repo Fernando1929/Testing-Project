@@ -49,7 +49,7 @@ function Navbar(props) {
             FACTIONS
           </a>
           <a
-            href="/Vaccine"
+            href="/aboutus"
             className="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >
             VACCINE

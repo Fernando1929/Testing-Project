@@ -10,8 +10,7 @@ import {
 } from "react-bootstrap";
 
 import "../App/App.css";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import { withRouter } from "react-router";
 
 function Signupform(props) {
   const [username, setUsername] = useState("");
@@ -46,43 +45,31 @@ function Signupform(props) {
   //   }
   // };
 
-  // const validateForm = () => {
-  //   let errors = [];
-  //   let isValid = true;
-  //   if (!(username.length > 0)) {
-  //     isValid = false;
-  //     errors.push("*Please enter your username.");
-  //   }
-  //   if (!(email.length > 0)) {
-  //     isValid = false;
-  //     errors.push("*Please enter your email.");
-  //   }
-  //   if (
-  //     (!(email.indexOf("@") > 0) || !email.charAt(email.length - 4) === ".") &&
-  //     email.length > 0
-  //   ) {
-  //     isValid = false;
-  //     errors.push("*Please enter a proper email address.");
-  //   }
-  //   if (!(password.length > 0)) {
-  //     isValid = false;
-  //     errors.push("*Please enter your password ");
-  //   }
-  //   if (!(password === password_rep) && password.length > 0) {
-  //     isValid = false;
-  //     errors.push("*Passwords doesn't match.");
-  //   }
-  //   setErrors(errors);
-  //   return isValid;
-  // };
+  const validateForm = () => {
+    let errors = [];
+    let isValid = true;
+    if (!(username.length > 0)) {
+      isValid = false;
+      errors.push("*Please enter your username.");
+    }
+    if (!(password.length > 0)) {
+      isValid = false;
+      errors.push("*Please enter your password ");
+    }
+    if (!(password === password_rep) && password.length > 0) {
+      isValid = false;
+      errors.push("*Passwords doesn't match.");
+    }
+    setErrors(errors);
+    return isValid;
+  };
   ////////////////////////////////////////////////
   return (
-    <div className="App w3-black">
-      <Navbar/>
+    <div className="App w3-black" style={{ paddingTop: "3rem"}}>
     <Container>
       <Row className="justify-content-center">
         <Col sm={7}>
-          <Card style={{ borderRadius: "15px", marginTop: "3rem", marginBottom: "13rem" }}>
+          <Card style={{ borderRadius: "15px", marginTop: "3rem", marginBottom: "10rem" }}>
             <Card.Body>
               <Card.Title>
                 <h1
@@ -108,20 +95,6 @@ function Signupform(props) {
                   placeholder="Username"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                />
-              </InputGroup>
-              <InputGroup style={{ marginBottom: "1rem" }}>
-                <InputGroup.Prepend>
-                  <InputGroup.Text>
-                    <i className="far fa-envelope"></i>
-                  </InputGroup.Text>
-                </InputGroup.Prepend>
-                <FormControl
-                  type="email"
-                  id="Email"
-                  placeholder="Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                 />
               </InputGroup>
               <InputGroup style={{ marginBottom: "1rem" }}>
@@ -160,7 +133,7 @@ function Signupform(props) {
               </div>
               <div className="text-center">
                 <Button
-                  // onClick={(e) => submit(e)}
+                  onClick={(e) => props.history.push("/profile")}
                   type="submit"
                   className="btn--primary"
                   variant="primary"
@@ -173,9 +146,8 @@ function Signupform(props) {
         </Col>
       </Row>
     </Container>
-    <Footer/>
     </div>
   );
 }
 
-export default Signupform;
+export default withRouter(Signupform);

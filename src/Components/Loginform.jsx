@@ -10,11 +10,7 @@ import {
 } from "react-bootstrap";
 import "../App/App.css";
 import "../Pages/Login/login.css";
-import { Nav, Image, Dropdown } from "react-bootstrap";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-
-
+import {withRouter} from "react-router-dom"; 
 
 function LoginForm(props){
     const [username, setUsername] = useState("");
@@ -62,7 +58,7 @@ function LoginForm(props){
   };
 
     return (
-      <div className="loginpg">
+      <div className="App">
       <title>W3.CSS Template</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -78,7 +74,6 @@ function LoginForm(props){
               '\nbody {font-family: "Lato", sans-serif}\n.mySlides {display: none}\n'
           }}
         />
-        <Navbar/>
         <div className="w3-black w3-content" style={{ maxWidth: 2000, marginTop: 5}}>
         <Container>
           <Row className="justify-content-center">
@@ -137,7 +132,7 @@ function LoginForm(props){
                     <Button
                       className="btn--primary"
                       variant="primary"
-                      onClick={(e) => submit(e)}
+                      onClick={(e) => props.history.push('/profile')}
                     >
                       LOG IN
                     </Button>
@@ -148,8 +143,7 @@ function LoginForm(props){
           </Row>
         </Container>
         </div>
-        <Footer/>
         </div>);
 }
 
-export default LoginForm;
+export default withRouter(LoginForm);
