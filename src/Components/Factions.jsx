@@ -4,8 +4,7 @@ import "../App/App.css";
 import "../Pages/Home/home.css";
 import "../Pages/Factions/factions.css";
 import { Nav, Button, Image, Dropdown } from "react-bootstrap";
-import Navbar  from "./Navbar";
-import Footer  from "./Footer";
+import Map  from "./Map";
 //important do not delete
 import AnyChart from 'anychart-react';
 import anychart from 'anychart';
@@ -196,7 +195,6 @@ function Factions(props) {
     className="w3-image w3-greyscale-min"
     style={{ width: "10%" }}
   />
-  <Footer/>
 </div>
 
   );
