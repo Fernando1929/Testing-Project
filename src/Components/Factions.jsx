@@ -72,7 +72,6 @@ function Factions(props) {
                   </h1>
                 </div>
               </header>
-
   </div>
   {/*END Container 1*/} 
  
@@ -82,7 +81,7 @@ function Factions(props) {
  <div className="w3-container w3-content w3-center w3-padding-32"
       style={{ maxWidth: 1500}} >
  
-      <h2 className="w3-border-bottom   w3-wide">
+      <h2 className="w3-border-bottom w3-wide">
         FACTIONS
       </h2>
       <p className=" w3-content w3-center w3-justify "
@@ -97,23 +96,25 @@ function Factions(props) {
         laboris nisi ut aliquip ex ea commodo consequat.
       </p>
   
-    <div className="w3-row-padding w3-grayscale">
-      <div className="w3-col l3 m6 w3-margin-bottom w3-padding-64">
-        <img src="Stark.png" alt="John" style={{ width: "100%" }} />
+
+
+ <div className="w3-row w3-container" style={{ margin: "50px 0" }}>
+    <div className="w3-half w3-container">
+      <div className="">
         <h2>The North</h2>
+        <img src="Stark.png" style={{ width: "50%" }} />
         <p className="w3-opacity"> Winter is comming</p>
         <p className="w3-justify">
         The northern territories are made up of small communities that strive on survival skills.
         Hunting and farming are the main way to stay alive. But harsh winters make most 
         crops unavailable and boarders hard to maintain. Even so the northern people are strong and resilient.
         </p>
-        <p>
-         
-        </p>
       </div>
-      <div className="w3-col l3 m6 w3-margin-bottom w3-padding-64">
-        <img src="Martell.png" alt="Jane" style={{ width: "100%" }} />
+    </div>
+    <div className="w3-half w3-container">
+      <div className="">
         <h2>The East</h2>
+        <img src="Martell.png" style={{ width: "50%" }} />
         <p className="w3-opacity">I'm Walkin' here! </p>
         <p className="w3-justify">
         The eastern territories are made up of large cities and population centers. 
@@ -121,13 +122,14 @@ function Factions(props) {
         Although the have the largest population,they also have the most fortified borders 
         out of all factions, so zombie attacks are generally contained. 
         </p>
-        <p>
-      
-        </p>
       </div>
-      <div className="w3-col l3 m6 w3-margin-bottom w3-padding-64">
-        <img src="Targaryen.png" alt="Mike" style={{ width: "100%" }} />
+    </div>
+  </div>
+  <div className="w3-row w3-container" style={{ margin: "50px 0" }}>
+    <div className="w3-half w3-container">
+      <div className="">
         <h2>The South</h2>
+        <img src="Targaryen.png" style={{ width: "50%" }} />    
         <p className="w3-opacity">Fire and Blood</p>
         <p className="w3-justify">
         The Southern territories are a harsh a baron wasteland. The people of the south are in constant battle 
@@ -135,30 +137,63 @@ function Factions(props) {
         They survive mostly on livestock and weapons trading with the northern and eastern factions.
         The people of the south live by the motto “Fire and blood”. 
         </p>
-        <p>
-        </p>
       </div>
-
-      <div className="w3-col l3 m6 w3-margin-bottom w3-padding-32">
-        <img src="zombie.png" alt="Dan" style={{ width: "100%" }} />
+    </div>
+    <div className="w3-half w3-container">
+      <div className="">
         <h2>Florida</h2>
+        <img src="zombie.png" style={{ width: "45%" }} />
         <p className="w3-opacity">Gone to FLorida. Be back never</p>
         <p className="w3-justify"> 
         For many years the territory of Florida (named after the former state of Florida) 
         was cut off from the rest of the factions, Amazon HQ only kept watch from afar. 
         As a result Florida developed into a land of misfits and outlaws that survive by any 
         means necessary. The people of Florida constantly invade the
-         southern faction to steal resources and to cause general mayhem. That’s why no one liked Florida. 
+        southern faction to steal resources and to cause general mayhem. That’s why no one likes Florida. 
         </p>
       </div>
     </div>
-
+  </div>
   </div>
   {/*END Container 2*/} 
 
-
-
-
+  <div className="w3-container w3-content w3-center w3-black"
+      style={{ maxWidth: 1500  }} >
+    
+         
+              <h2 className="w3-padding-32 w3-wide">
+                   The NoNo Zone
+                </h2>
+                <div className="w3-display-container w3-content "
+                style={{ maxWidth: 1500 }}>
+                <img
+                  className="w3-image"
+                  src="horde.jpg"
+                  alt="Architecture"
+                  width={1000}
+                  height={600}
+                />
+                <div className="w3-display-middle w3-margin-top w3-center">
+                  <h1 className="w3-xxxlarge w3-text-white">
+                    <span className="w3-padding w3-orange w3-opacity-min">
+                      <b>AZ</b>
+                    </span>{" "}
+                    <span className="w3-hide-small w3-text-light-grey">Survive</span>
+                  </h1>
+                </div>
+                
+                <p className=" w3-content w3-justify w3-center w3-padding-32" 
+                style={{ maxWidth: 800}}>
+                The zombie infested territories, dubbed the NoNo zone by the rest of the factions,
+                is the area where the largest populations of zombies reside. The zombie hoards are
+                kept at bay by the surrounding factions but every so often large groups of them will 
+                randomly attack the boarder of a faction. Territories like the former state of Nevada 
+                and Oklahoma have been lost to hoards like these. Though factions accuse
+                Amazon of amassing the zombies and sending them towards their boarders for entertainment
+                and research, we at Amazon would never put the lives of out fellow humans in danger.  
+                </p>
+              </div>
+  </div>
 
  {/* Map of factions dimensions */}
       <div id="ac-chart"  style={{ 
@@ -172,10 +207,9 @@ function Factions(props) {
 
   
   {/* Image of location/map */}
-  <img
-    src="zombie.png"
-    className="w3-image w3-greyscale-min"
-    style={{ width: "10%" }}
+  <img src="zombie.png"
+   className="w3-image w3-greyscale-min"
+  style={{ width: "10%" }}
   />
 </div>
 
