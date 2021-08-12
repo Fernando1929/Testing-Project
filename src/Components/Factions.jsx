@@ -1,8 +1,5 @@
 
 import React from "react";
-import createClass from 'create-react-class';
-import ReactDOM from 'react-dom';
-import { render } from "react-dom";
 import "../App/App.css";
 import "../Pages/Home/home.css";
 import "../Pages/Factions/factions.css";
@@ -48,7 +45,6 @@ function Factions(props) {
         '\nbody {font-family: "Lato", sans-serif}\n.mySlides {display: none}\n'
     }}
   />
-  <Navbar/>
 
   {/* Page content */}
   <div className="w3-content" style={{ maxWidth: 2000, marginTop: 46 }}>
@@ -118,7 +114,8 @@ function Factions(props) {
       
 
  {/* Map of factions dimensions */}
-      <html>
+ <Map/>
+      {/* <html>
     <head>
     </head>
     <body>
@@ -137,7 +134,7 @@ function Factions(props) {
           style={{ backgroundColor:'red',}}
         /></div>
     </body>
-  </html>
+  </html> */}
 {/*End Map of factions dimensions */}
 
 

@@ -1,16 +1,8 @@
 
 import React from "react";
-import createClass from 'create-react-class';
-import ReactDOM from 'react-dom';
-import { render } from "react-dom";
 import "../App/App.css";
 import "../Pages/Home/home.css";
 import "../Pages/Factions/factions.css";
-import { Nav, Button, Image, Dropdown } from "react-bootstrap";
-import Navbar from "./Navbar";
-import Map from "./Map";
-import zombie from '../images/zombie.png';
-import Footer from "./Footer";
 
 
 function Home1(props) {
@@ -33,7 +25,6 @@ function Home1(props) {
         '\nbody {font-family: "Lato", sans-serif}\n.mySlides {display: none}\n'
     }}
   />
-  <Navbar/>
   {/* Page content */}
   <div className="w3-black w3-content" style={{ maxWidth: 2000, marginTop: 8 }}>
     {/* Automatic Slideshow Images */}
@@ -266,7 +257,6 @@ function Home1(props) {
       </div>
     </div>
   </div>
-  <Footer/>
 </div>
 
 );

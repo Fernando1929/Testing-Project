@@ -1,10 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import AnyChart from 'anychart-react';
 import anychart from 'anychart';
 //important do not delete
 import gdata1 from "../Pages/Map/b.js";
-import Navbar from "./Navbar";
 //important do not delete
 
 let data = anychart.data.set([
@@ -34,9 +32,8 @@ return(
     }}
   />
     </div> 
-    <Navbar/>
       <div id="ac-chart"  style={{ 
-        display: "block",
+        display: "inline-block",
         textAlign: "center",
         border:"none"}}>
       <AnyChart
@@ -46,7 +43,6 @@ return(
           data={data}
           title="Map of Factions"
           geoData='anychart.maps.united_states_of_america'
-          Style={{fill:"#FF0000"}}
         /></div>
     </body>);
 }
