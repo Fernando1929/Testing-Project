@@ -48,7 +48,7 @@ function Navbar(props) {
         href="/aboutus"
         className="w3-bar-item w3-button w3-padding-large w3-hide-small"
       >
-          INVENTORY
+          VACCINE
       </a>
       <a
         href="/aboutus"
@@ -56,25 +56,8 @@ function Navbar(props) {
       >
         ABOUT
       </a>
-      <div className="w3-dropdown-hover w3-hide-small">
-        <button className="w3-padding-large w3-button" title="More">
-          MORE <i className="fa fa-caret-down" />
-        </button>
-        <div className="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" className="w3-bar-item w3-button">
-            Merchandise
-          </a>
-          <a href="#" className="w3-bar-item w3-button">
-            Extras
-          </a>
-          <a href="#" className="w3-bar-item w3-button">
-            Media
-          </a>
-        </div>
-      </div> 
       <a href="/login" className="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-right">Login</a>
     <a href="/signup" className="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-right">Sign Up</a>
-    <a href="javascript:void(0)" className="w3-padding-large w3-hover-blue w3-hide-small w3-right"><i className="fa fa-search" /></a>
     </div>
     </div>
     {/* Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) */}
