@@ -50,13 +50,7 @@ function Factions(props) {
       className="w3-container w3-content w3-center w3-padding-32"
       style={{ maxWidth: 1500  }}
       id="factions" >
-      
-
-
-
- {/* Map of factions dimensions */}
- <Map/>
-{/*End Map of factions dimensions */}
+    
 
 
 {/* Factions Section */}
@@ -162,28 +156,13 @@ function Factions(props) {
   </div>
 
  {/* Map of factions dimensions */}
- <html>
-    <head>
-    </head>
-    <body>
+
       <div id="ac-chart"  style={{ 
         display: "inline-block",
         textAlign: "center",
         border:"none",}}>
-      <AnyChart
-          width={800}
-          height={600}
-          type="choropleth"
-          data={data}
-          title="Map of Factions"
-          geoData='anychart.maps.united_states_of_america'
-          borders="none"
-          style={{ backgroundColor:'red',}}
-        /></div>
-    </body>
-  </html>
-{/*End Map of factions dimensions */}
-
+        <Map/> 
+     </div>
   </div>
  {/* End Page Content */}
 
