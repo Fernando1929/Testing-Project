@@ -220,7 +220,14 @@ function Factions(props) {
       </p>
 
 
-
+      <img
+        src="amazon.jpg"
+        alt="Me"
+        className="w3-image"
+        style={{ display: "block", margin: "auto" }}
+        width={800}
+        height={533}
+      />
 
  {/* Map of factions dimensions */}
       <html>
@@ -264,7 +271,7 @@ function Factions(props) {
     </div>
     <div className="w3-row-padding w3-grayscale">
       <div className="w3-col l3 m6 w3-margin-bottom">
-        <img src="zombie.png" alt="John" style={{ width: "100%" }} />
+        <img src="Stark.png" alt="John" style={{ width: "100%" }} />
         <h2>The North</h2>
         <p className="w3-opacity "> Winter is comming</p>
         <p>
@@ -277,7 +284,7 @@ function Factions(props) {
         </p>
       </div>
       <div className="w3-col l3 m6 w3-margin-bottom">
-        <img src="zombie.png" alt="Jane" style={{ width: "100%" }} />
+        <img src="Martell.png" alt="Jane" style={{ width: "100%" }} />
         <h2>The East</h2>
         <p className="w3-opacity">I'm Walkin' here! &amp; Unbowed, Unbent, Unbroken</p>
         <p>
@@ -291,7 +298,7 @@ function Factions(props) {
         </p>
       </div>
       <div className="w3-col l3 m6 w3-margin-bottom">
-        <img src="zombie.png" alt="Mike" style={{ width: "100%" }} />
+        <img src="Targaryen.png" alt="Mike" style={{ width: "100%" }} />
         <h2>The South</h2>
         <p className="w3-opacity">Fire and Blood</p>
         <p>
