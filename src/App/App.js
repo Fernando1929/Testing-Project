@@ -7,12 +7,14 @@ import About from "../Pages/About/aboutus";
 import Factions from "../Pages/Factions/factions";
 import Login from "../Pages/Login/login";
 import Signup from "../Pages/Signup/signup";
-
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <Navbar/>
       <Switch>
         <Route exact path = "/" render={() => <Home/>}/>
         <Route exact path = "/login" render={() => <Login/>}/>
@@ -20,6 +22,7 @@ function App() {
         <Route exact path = "/aboutus" render ={() => <About/>}/>
         <Route exact path = "/factions" render ={() => <Factions/>}/>
       </Switch>
+      <Footer/>
     </Router>
       
   );

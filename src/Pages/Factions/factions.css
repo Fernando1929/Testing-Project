@@ -1,6 +1,8 @@
 
 /* changes map background color */
-g path {    
-    fill: rgb(0, 0, 0); 
+#ac_layer_b0e99cc_4{    
+    /* fill: rgb(0, 0, 0);  */
+    /* stroke: none; */
+    fill: blue;
     stroke: none;
 }

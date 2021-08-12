@@ -1,14 +1,10 @@
 
 import React from "react";
-import createClass from 'create-react-class';
-import ReactDOM from 'react-dom';
-import { render } from "react-dom";
 import "../App/App.css";
 import "../Pages/Home/home.css";
 import "../Pages/Factions/factions.css";
 import { Nav, Button, Image, Dropdown } from "react-bootstrap";
-import Navbar  from "./Navbar";
-import Footer  from "./Footer";
+import Map  from "./Map";
 //important do not delete
 import AnyChart from 'anychart-react';
 import anychart from 'anychart';
@@ -46,7 +42,6 @@ function Factions(props) {
         '\nbody {font-family: "Lato", sans-serif}\n.mySlides {display: none}\n'
     }}
   />
-  <Navbar/>
 
   {/* Page content */}
   <div className="w3-black w3-content " style={{ maxWidth: 2000, marginTop: 8 }}>
@@ -55,10 +50,7 @@ function Factions(props) {
       className="w3-container w3-content w3-center"
       style={{ maxWidth: 1500  }}
       id="factions" >
-      
-
-
-
+    
 
 
 {/* Factions Section */}
@@ -165,28 +157,13 @@ function Factions(props) {
 
 
  {/* Map of factions dimensions */}
- <html>
-    <head>
-    </head>
-    <body>
+
       <div id="ac-chart"  style={{ 
         display: "inline-block",
         textAlign: "center",
         border:"none",}}>
-      <AnyChart
-          width={800}
-          height={600}
-          type="choropleth"
-          data={data}
-          title="Map of Factions"
-          geoData='anychart.maps.united_states_of_america'
-          borders="none"
-          style={{ backgroundColor:'red',}}
-        /></div>
-    </body>
-  </html>
-{/*End Map of factions dimensions */}
-
+        <Map/> 
+     </div>
   </div>
  {/* End Page Content */}
 
@@ -198,7 +175,6 @@ function Factions(props) {
     className="w3-image w3-greyscale-min"
     style={{ width: "10%" }}
   />
-  <Footer/>
 </div>
 
   );
