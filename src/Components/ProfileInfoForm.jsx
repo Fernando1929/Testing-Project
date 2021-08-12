@@ -1,28 +1,43 @@
 
-import React from "react";
+import React, { useState } from "react";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  Button,
+  InputGroup,
+  FormControl,
+  Form,
+} from "react-bootstrap";
 import "../App/App.css";
+import {withRouter} from "react-router-dom";
 import "../Pages/Home/home.css";
-import { Nav, Button, Image, Dropdown } from "react-bootstrap";
 
 function ProfileInfo(props) {
+    const [firstname, setFirstname] = useState("");
+    const [lastname, setLastname] = useState("");
+    const [city, setCity] = useState("");
+    const [country, setCountry] = useState("");
+    const [error_message, setErrors] = useState([]);
+    
     return (
+        <div className="App w3-black w3-content" style={{ maxWidth: 2000, marginTop: 5, paddingBottom: "10rem"}}>
         <Container>
         <Row className="justify-content-center">
         <Col sm={7}>
-            <Card style={{ borderRadius: "15px", marginTop: "3rem" }}>
+            <Card style={{ borderRadius: "15px", marginTop: "3rem"}}>
             <Card.Body>
                 <Card.Title>
-                <h1
-                    className="text-center"
+                <h1 className="text-center"
                     style={{
                     fontWeight: "600",
                     fontFamily: "'Open Sans', sans-serif",
-                    }}
-                >
+                    color: "black"
+                    }}>
                     Profile Info
                 </h1>
                 </Card.Title>
-
                 <InputGroup style={{ marginBottom: "1rem" }}>
                 <FormControl
                     type="firstName"
@@ -35,28 +50,6 @@ function ProfileInfo(props) {
                     placeholder="*Last name"
                     value={lastname}
                     onChange={(e) => setLastname(e.target.value)}
-                />
-                </InputGroup>
-                <InputGroup style={{ marginBottom: "1rem" }}>
-                <FormControl
-                    type="phone"
-                    id="phone"
-                    placeholder="Phone"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                />
-                <label className="text-muted" style={{ fontSize: "smaller" }}>
-                    Besides the leading ‘+’ in the country code, all characters
-                    should be numeric. Ex. +17871234567.
-                </label>
-                </InputGroup>
-                <InputGroup style={{ marginBottom: "1rem" }}>
-                <FormControl
-                    type="street_address"
-                    id="street_address"
-                    placeholder="Street Address"
-                    value={street_address}
-                    onChange={(e) => setStreetAddress(e.target.value)}
                 />
                 </InputGroup>
                 <InputGroup style={{ marginBottom: "1rem" }}>
@@ -87,7 +80,7 @@ function ProfileInfo(props) {
                 <div className="text-center">
                 <Button
                     type="submit"
-                    onClick={(e) => submit(e)}
+                    onClick={(e) => props.history.push("/")}
                     className="btn--primary"
                     variant="primary"
                 >
@@ -99,6 +92,7 @@ function ProfileInfo(props) {
         </Col>
         </Row>
         </Container>
+        </div>
     );
 }
-export default ProfileInfo;
+export default withRouter(ProfileInfo);

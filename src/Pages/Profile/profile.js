@@ -1,8 +1,8 @@
 import React from "react";
-import "./signup.css";
+import "./profile.css";
 import ProfileInfoForm from "../../Components/ProfileInfoForm";
 
-function signup(){
+function profileForm(){
 return (
     <div className="App">
     <ProfileInfoForm/>
@@ -10,4 +10,4 @@ return (
     );
 }
 
-export default signup;
+export default profileForm;

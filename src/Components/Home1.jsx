@@ -27,11 +27,6 @@ function Home1(props) {
   />
   {/* Page content */}
   <div className="w3-black w3-content" style={{ maxWidth: 2000, marginTop: 8 }}>
-
-
- 
-
-
     {/* The Band Section */}
     <div
       className="w3-container w3-content w3-center w3-padding-64"
