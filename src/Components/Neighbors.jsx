@@ -89,8 +89,8 @@ function Neighbors(props) {
   
     return (
         <div className="App">
-           <label>City</label>
-                <Form.Row>
+           <label>State</label>
+                <Form.Row style={{marginTop:"3rem"}}>
                     <Form.Group as={Col} controlId="formGridState">
                     <Form.Control
                         as="select"
