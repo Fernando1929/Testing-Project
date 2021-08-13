@@ -49,28 +49,22 @@ function Navbar(props) {
             FACTIONS
           </a>
           <a
-            href="/Vaccine"
+            href="/neighbors"
             className="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >
-            VACCINE
+           NEIGHBORS
+          </a>
+          <a
+            href="/resources"
+            className="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >
+            RESOURCES
           </a>
           <a
             href="/aboutus"
             className="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >
             ABOUT
-          </a>
-          <a
-            href="/login"
-            className="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-right"
-          >
-            Login
-          </a>
-          <a
-            href="/signup"
-            className="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-right"
-          >
-            Sign Up
           </a>
         </div>
       </div>

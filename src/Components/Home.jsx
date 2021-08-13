@@ -30,48 +30,6 @@ function Home(props) {
 
                 <title>Amazon Prime Z </title>
             </head>
-            <Nav class="navbar navbar-expand-lg navbar navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"> prime z</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inventory</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Vaccine</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Factions
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Faction A</a></li>
-                                    <li><a class="dropdown-item" href="#">Faction B</a></li>
-                                    <li><a class="dropdown-item" href="#">Faction C</a></li>
-                                    <li><a class="dropdown-item" href="#">Faction D</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">temp</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <span class='b1'> <button type="button" class="btn btn-light">Login </button> </span>
-                            <span class='b2'> <button type="button" class="btn btn-light">Sign Up </button> </span>
-
-
-                        </form>
-                    </div>
-                </div>
-            </Nav>
             <div class='mainb'>
                 <div class='topcontainer'>
                     <div class='head'>

@@ -10,8 +10,10 @@ import Signup from "../Pages/Signup/signup";
 import Navbar from "../Components/Navbar";
 import LoggedNavbar from "../Components/LoggedNavbar";
 import Footer from "../Components/Footer";
-import Profile from "../Components/ProfileInfoForm";
+import Profile from "../Pages/Profile/profile";
 import './App.css';
+import Resources from "../Pages/Resources/resources";
+import Neighbors from "../Pages/Neighbors/neightbors";
 
 function App() {
 const auth = () => {
@@ -23,11 +25,11 @@ const auth = () => {
        {auth() ? <LoggedNavbar/> : <Navbar/>}
       <Switch>
         <Route exact path = "/" render={() => <Home/>}/>
-        <Route exact path = "/login" render={() => <Login/>}/>
-        <Route exact path = "/profile" render={() => <Profile/>}/>
-        <Route exact path = "/signup" render={() => <Signup/>}/>
+        <Route exact path = "/resources" render={() => <Resources/>}/>
+        <Route exact path = "/neighbors" render={() => <Neighbors/>}/>
         <Route exact path = "/aboutus" render ={() => <About/>}/>
         <Route exact path = "/factions" render ={() => <Factions/>}/>
+        {/* <Route exact path = "/profile" render={() => <Profile/>}/> */}
       </Switch>
       <Footer/>
     </Router>
