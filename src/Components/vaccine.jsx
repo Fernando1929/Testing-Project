@@ -1,7 +1,7 @@
 import React from "react";
 import "../App/App.css";
 import "../Pages/Home/home.css";
-import "../Pages/Vaccine/vaccine.css";
+import "../Pages/Vaccine/Vaccine.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Nav, Button, Image, Dropdown } from "react-bootstrap";
@@ -34,6 +34,7 @@ function Vaccine(props) {
       />
       <link rel="stylesheet" href="src/Pages/Vaccine/vaccine.css" />
       <script src="//static.miniclipcdn.com/js/game-embed.js"></script>
+
       <Navbar />
       <div className="top-container">
         <div className="container-fluid">
