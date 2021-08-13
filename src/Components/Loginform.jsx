@@ -11,6 +11,8 @@ import {
 import "../App/App.css";
 import "../Pages/Login/login.css";
 import {withRouter} from "react-router-dom"; 
+import { credentialHandler } from "../Apis/Credentials.js";
+import Auth from "../utils/Auth";
 
 function LoginForm(props){
     const [username, setUsername] = useState("");
@@ -25,20 +27,20 @@ function LoginForm(props){
         username: username.toLowerCase(),
         password: password,
         };
-        // loginHandler(user).then((res) => {
-        // if (res.status === 200) {
-        //     //Just for now
-        //     Auth.authenticateUser(res.data.token);
-        //     Auth.setUserid(res.data.user_id);
-        //     Auth.setUsername(res.data.username);
-        //     props.history.push("/");
-        //     window.location.reload(false);
-        //     console.log("User logged in", res.data);
-        // } else {
-        //     errors.push(res.data);
-        //     setErrors(errors);
-        // }
-        // });
+        credentialHandler(user).then((res) => {
+        if (res.status === 200) {
+            //Just for now
+            Auth.authenticateUser(res.data.token);
+            Auth.setUserid(res.data.user_id);
+            Auth.setUsername(res.data.username);
+            props.history.push("/");
+            window.location.reload(false);
+            console.log("User logged in", res.data);
+        } else {
+            errors.push(res.data);
+            setErrors(errors);
+        }
+        });
     }
     };
 
@@ -132,7 +134,7 @@ function LoginForm(props){
                     <Button
                       className="btn--primary"
                       variant="primary"
-                      onClick={(e) => props.history.push('/profile')}
+                      onClick={(e) => submit(e)}
                     >
                       LOG IN
                     </Button>

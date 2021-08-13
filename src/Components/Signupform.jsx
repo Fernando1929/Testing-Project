@@ -11,39 +11,42 @@ import {
 
 import "../App/App.css";
 import { withRouter } from "react-router";
+import { signupHandler } from "../Apis/Signup";
+import Auth from "../utils/Auth";
 
 function Signupform(props) {
   const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [password_rep, setPassword_rep] = useState("");
   const [error_message, setErrors] = useState([]);
 
-  // const submit = (e) => {
-  //   e.preventDefault();
-  //   if (validateForm()) {
-  //     console.log("validated");
-  //     let errors = [];
-  //     const user = {
-  //       username: username.toLowerCase(),
-  //       email: email.toLowerCase(),
-  //       password: password,
-  //     };
+  const submit = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      console.log("validated");
+      let errors = [];
+      const user = {
+        username : username.toLowerCase(),
+        password : password
+      };
 
-  //     //Here send things to the handler
-  //     signupHandler(user).then((res) => {
-  //       if (res.status === 201) {
-  //         //Auth.authenticateUser("token");//Look into Later**
-  //         Auth.setUserid(res.data.account_id); // account_id = res.data.account_id;
-  //         props.history.push("/ProfileInfo");
+      //Here send things to the handler
+      signupHandler(user).then((res) => {
+        if (res.status === 201) {
+          //Auth.authenticateUser("token");
+          //Look into Later**
+          // account_id = res.data.account_id;
+          Auth.setUserid(res.data.Credentials.cred_id); 
+
+          props.history.push("/profile");
           
-  //       } else {
-  //         errors.push(res.data);
-  //         setErrors(errors);
-  //       }
-  //     });
-  //   }
-  // };
+        } else {
+          errors.push(res.data);
+          setErrors(errors);
+        }
+      });
+    }
+  };
 
   const validateForm = () => {
     let errors = [];
@@ -133,7 +136,7 @@ function Signupform(props) {
               </div>
               <div className="text-center">
                 <Button
-                  onClick={(e) => props.history.push("/profile")}
+                  onClick={(e) => submit(e)}
                   type="submit"
                   className="btn--primary"
                   variant="primary"
