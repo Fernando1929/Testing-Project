@@ -81,9 +81,9 @@ function Factions(props) {
  <div className="w3-container w3-content w3-center w3-padding-32"
       style={{ maxWidth: 1500}} >
  
-      <h2 className="w3-border-bottom w3-wide">
+      <h1 className="w3-border-bottom w3-wide">
         FACTIONS
-      </h2>
+      </h1>
       <p className=" w3-content w3-center w3-justify "
       style={{ maxWidth: 800}}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -168,18 +168,16 @@ function Factions(props) {
                 style={{ maxWidth: 1500 }}>
                 <img
                   className="w3-image"
-                  src="horde.jpg"
+                  src="warz.jpg"
                   alt="Architecture"
                   width={1000}
                   height={600}
                 />
-                <div className="w3-display-middle w3-margin-top w3-center">
-                  <h1 className="w3-xxxlarge w3-text-white">
-                    <span className="w3-padding w3-orange w3-opacity-min">
-                      <b>AZ</b>
-                    </span>{" "}
-                    <span className="w3-hide-small w3-text-light-grey">Survive</span>
-                  </h1>
+                <div className="w3-display-top w3-margin-top">
+                  <h2 className="w3-xxlarge w3-text-white">
+                  
+                    <span className="w3-hide-small w3-text-light-grey">Death awaits</span>
+                  </h2>
                 </div>
                 
                 <p className=" w3-content w3-justify w3-center w3-padding-32" 
@@ -188,9 +186,7 @@ function Factions(props) {
                 is the area where the largest populations of zombies reside. The zombie hoards are
                 kept at bay by the surrounding factions but every so often large groups of them will 
                 randomly attack the boarder of a faction. Territories like the former state of Nevada 
-                and Oklahoma have been lost to hoards like these. Though factions accuse
-                Amazon of amassing the zombies and sending them towards their boarders for entertainment
-                and research, we at Amazon would never put the lives of out fellow humans in danger.  
+                and Oklahoma have been lost to hoards like these.
                 </p>
               </div>
   </div>
