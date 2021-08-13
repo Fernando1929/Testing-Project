@@ -16,7 +16,7 @@ import { Container,Form,Col } from "react-bootstrap";
 import { useState } from "react";
 import {resourceHandler, waterHandler, medHandler, foodHandler, clothHandler, fuelHandler, } from "../Apis/Resources";
 
-var rows = [];
+// const [rows, setRows] = useState([]);
 var st = '';
 const useStyles = makeStyles({
   table: {
@@ -33,9 +33,8 @@ function Resources(props) {
     const classes = useStyles();
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
-    // const [st, setST] = useState("");
     const [errors, setErrors] = useState([]);
-
+    const [rows, setRows] = useState([]);
 
     const onSubmit = async(e) => {
         e.preventDefault();
@@ -43,7 +42,8 @@ function Resources(props) {
            await waterHandler().then((res) => {
             if (res.status === 200) {
                 //Just for now
-              rows = res.data;
+              setRows(res.data.Water)
+              let j = res.data.Water;
             } else {
                 errors.push(res.data);
                 setErrors(errors);
@@ -51,7 +51,7 @@ function Resources(props) {
             });
         }
         else if(st == 'food'){
-          foodHandler().then((res) => {
+          await foodHandler().then((res) => {
             console.log(res.data);
             if (res.status === 200) {
                 //Just for now
@@ -63,7 +63,7 @@ function Resources(props) {
             });
         }
         else if(st == 'fuel'){
-          fuelHandler().then((res) => {
+          await fuelHandler().then((res) => {
             console.log(res.data);
             if (res.status === 200) {
                 //Just for now
@@ -77,7 +77,7 @@ function Resources(props) {
             });
         }
         else if(st == 'med'){
-          medHandler().then((res) => {
+          await medHandler().then((res) => {
             console.log(res);
             if (res.status === 200) {
                 //Just for now
@@ -91,7 +91,7 @@ function Resources(props) {
             });
         }
         else if(st == 'cloth'){
-          clothHandler().then((res) => {
+          await clothHandler().then((res) => {
             console.log(res);
             if (res.status === 200) {
                 //Just for now
@@ -105,7 +105,7 @@ function Resources(props) {
             });
         }
         else{
-          resourceHandler().then((res) => {
+          await resourceHandler().then((res) => {
             console.log(res);
             if (res.status === 200) {
                 //Just for now
