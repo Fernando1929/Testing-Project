@@ -89,63 +89,71 @@ function Neighbors(props) {
   
     return (
         <div className="App">
-           <label>State</label>
+            <label>State</label>
                 <Form.Row style={{marginTop:"3rem"}}>
                     <Form.Group as={Col} controlId="formGridState">
                     <Form.Control
                         as="select"
                         defaultValue="From"
-                        onChange={(e) => setST(e.target.value)}
-                    >
+                        onChange={(e) => setST(e.target.value)}>
                         <option>*From</option>
-                        <option value="00:00">12:00 AM</option>
-                        <option value="00:30">12:30 AM</option>
-                        <option value="01:00">01:00 AM</option>
-                        <option value="01:30">01:30 AM</option>
-                        <option value="02:00">02:00 AM</option>
-                        <option value="02:30">02:30 AM</option>
-                        <option value="03:00">03:00 AM</option>
-                        <option value="03:30">03:30 AM</option>
-                        <option value="04:00">04:00 AM</option>
-                        <option value="04:30">04:30 AM</option>
-                        <option value="05:00">05:00 AM</option>
-                        <option value="05:30">05:30 AM</option>
-                        <option value="06:00">06:00 AM</option>
-                        <option value="06:30">06:30 AM</option>
-                        <option value="07:00">07:00 AM</option>
-                        <option value="07:30">07:30 AM</option>
-                        <option value="08:00">08:00 AM</option>
-                        <option value="08:30">08:30 AM</option>
-                        <option value="09:00">09:00 AM</option>
-                        <option value="09:30">09:30 AM</option>
-                        <option value="10:00">10:00 AM</option>
-                        <option value="10:30">10:30 AM</option>
-                        <option value="11:00">11:00 AM</option>
-                        <option value="11:30">11:30 AM</option>
-                        <option value="12:00">12:00 PM</option>
-                        <option value="12:30">12:30 PM</option>
-                        <option value="13:00">01:00 PM</option>
-                        <option value="13:30">01:30 PM</option>
-                        <option value="14:00">02:00 PM</option>
-                        <option value="14:30">02:30 PM</option>
-                        <option value="15:00">03:00 PM</option>
-                        <option value="15:30">03:30 PM</option>
-                        <option value="16:00">04:00 PM</option>
-                        <option value="16:30">04:30 PM</option>
-                        <option value="17:00">05:00 PM</option>
-                        <option value="17:30">05:30 PM</option>
-                        <option value="18:00">06:00 PM</option>
-                        <option value="18:30">06:30 PM</option>
-                        <option value="19:00">07:00 PM</option>
-                        <option value="19:30">07:30 PM</option>
-                        <option value="20:00">08:00 PM</option>
-                        <option value="20:30">08:30 PM</option>
-                        <option value="21:00">09:00 PM</option>
-                        <option value="21:30">09:30 PM</option>
-                        <option value="22:00">10:00 PM</option>
-                        <option value="22:30">10:30 PM</option>
-                        <option value="23:00">11:00 PM</option>
-                        <option value="23:30">11:30 PM</option>
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AS">AS</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DE">DE</option>
+                        <option value="DC">DC</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="GU">GU</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="MP">MP</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OK</option>
+                        <option value="PA">PA</option>
+                        <option value="PR">PA</option>
+                        <option value="RI">PA</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UM">UM</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VI">VI</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WI</option>                        
                     </Form.Control>
                     </Form.Group>
                     </Form.Row>
