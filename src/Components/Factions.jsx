@@ -149,7 +149,7 @@ function Factions(props) {
         was cut off from the rest of the factions, Amazon HQ only kept watch from afar. 
         As a result Florida developed into a land of misfits and outlaws that survive by any 
         means necessary. The people of Florida constantly invade the
-        southern faction to steal resources and to cause general mayhem. That’s why no one likes Florida. 
+        southern faction to steal resources and to cause general mayhem. Yes, they drew thier own banner. 
         </p>
       </div>
     </div>

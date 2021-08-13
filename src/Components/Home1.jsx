@@ -26,10 +26,10 @@ function Home1(props) {
     }}
   />
   {/* Page content */}
-  <div className="w3-black w3-content" style={{ maxWidth: 2000, marginTop: 8 }}>
+  <div className=" w3-content" style={{ maxWidth: 2000, marginTop: 8 }}>
 
 
-  <div className="w3-container w3-content w3-center w3-black"
+  <div className="w3-container w3-content w3-center"
       style={{ maxWidth: 1500  }} >
     
             {/* Header */}

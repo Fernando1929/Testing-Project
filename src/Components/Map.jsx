@@ -6,10 +6,73 @@ import gdata1 from "../Pages/Map/b.js";
 //important do not delete
 
 let data = anychart.data.set([
-  {'id': 'US.TX', 'value': 0, 'fill':'#FF0000'},
+
   {'id': 'US.FL', 'value': 0, 'fill':'yellow'},
-  {'id': 'US.NY', 'value': 0, 'fill':'orange'},
-  {'id': 'US.CA', 'value': 0, 'fill':'#FF0000'}
+
+  {'id': 'US.WA', 'value': 0, 'fill':'#008220'},
+  {'id': 'US.OR', 'value': 0, 'fill':'#008220'},
+  {'id': 'US.ID', 'value': 0, 'fill':'#008220'},
+  {'id': 'US.MT', 'value': 0, 'fill':'#008220'},
+  {'id': 'US.ND', 'value': 0, 'fill':'#008220'},
+  {'id': 'US.MN', 'value': 0, 'fill':'#008220'},
+  {'id': 'US.WI', 'value': 0, 'fill':'#008220'},
+  {'id': 'US.MI', 'value': 0, 'fill':'#008220'},
+  
+  {'id': 'US.TX', 'value': 0, 'fill':'#FF4F4F'},
+  {'id': 'US.CA', 'value': 0, 'fill':'#FF4F4F'},
+  {'id': 'US.AZ', 'value': 0, 'fill':'#FF4F4F'},
+  {'id': 'US.NM', 'value': 0, 'fill':'#FF4F4F'},
+  {'id': 'US.LA', 'value': 0, 'fill':'#FF4F4F'},
+  {'id': 'US.MS', 'value': 0, 'fill':'#FF4F4F'},
+  
+  {'id': 'US.NY', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.MI', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.OH', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.PA', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.WV', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.VA', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.NC', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.MD', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.DE', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.NJ', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.RI', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.CI', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.MA', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.NH', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.NY', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.MC', 'value': 0, 'fill':'#016E83'},
+  {'id': 'US.VT', 'value': 0, 'fill':'#016E83'},
+
+  
+  {'id': 'US.NV', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.UT', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.WY', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.SD', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.CO', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.KS', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.OK', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.IA', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.MO', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.AR', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.NV', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.IL', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.IN', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.KY', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.TN', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.GA', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.SC', 'value': 0, 'fill':'#FFC0C0'},
+  {'id': 'US.AL', 'value': 0, 'fill':'#FFC0C0'},
+
+
+  {'id': 'US.NE', 'value': 0, 'fill':'#F1C40F'},
+  {'id': 'US.HI', 'value': 0, 'fill':'#F1C40F'},
+  {'id': 'US.AK', 'value': 0, 'fill':'#F1C40F'},
+
+
+  
+
+  
+
 ]);
 
 function Map (props){
