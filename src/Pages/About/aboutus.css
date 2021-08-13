@@ -1,0 +1,25 @@
+.top-container {
+  text-align: center;
+  position: relative;
+  right: 220px;
+  width: 800px;
+  height: auto;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+.c1 {
+  position: absolute;
+  height: 400px;
+  width: 1500px;
+  background-color: brown;
+}
+.w3-container {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
