@@ -1,0 +1,32 @@
+[{
+    "resource_id" : 7,
+    "resource_name" : "minerals",
+    "resource_availability" : 1
+},
+{
+    "resource_id" : 1,
+    "resource_name" : "water",
+    "resource_availability" : 1
+},
+{
+    "resource_id" : 2,
+    "resource_name" : "fuel",
+    "resource_availability" : 1
+},
+{
+    "resource_id" : 3,
+    "resource_name" : "food",
+    "resource_availability" : 1
+},
+{
+    "resource_id" : 4,
+    "resource_name" : "cloth",
+    "resource_availability" : 1
+},
+{
+    "resource_id" : 5,
+    "resource_name" : "medicine",
+    "resource_availability" : 1
+}
+
+]
