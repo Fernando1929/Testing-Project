@@ -86,21 +86,14 @@ function Factions(props) {
       </h1>
       <p className=" w3-content w3-center w3-justify "
       style={{ maxWidth: 800}}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt
-        in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.
+
       </p>
   
 
 
- <div className="w3-row w3-container" style={{ margin: "50px 0" }}>
-    <div className="w3-half w3-container">
-      <div className="">
+ <div className="w3-row w3-container w3-content w3-center" style={{ margin: "50px 0" }}>
+    <div className="w3-half w3-container w3-content w3-center">
+      <div className="w3-content w3-center">
         <h2>The North</h2>
         <img src="Stark.png" style={{ width: "50%" }} />
         <p className="w3-opacity"> Winter is comming</p>
@@ -111,7 +104,7 @@ function Factions(props) {
         </p>
       </div>
     </div>
-    <div className="w3-half w3-container">
+    <div className="w3-half w3-container w3-content w3-center">
       <div className="">
         <h2>The East</h2>
         <img src="Martell.png" style={{ width: "50%" }} />
@@ -125,8 +118,8 @@ function Factions(props) {
       </div>
     </div>
   </div>
-  <div className="w3-row w3-container" style={{ margin: "50px 0" }}>
-    <div className="w3-half w3-container">
+  <div className="w3-row w3-container w3-content w3-center" style={{ margin: "50px 0" }}>
+    <div className="w3-half w3-container w3-content w3-center">
       <div className="">
         <h2>The South</h2>
         <img src="Targaryen.png" style={{ width: "50%" }} />    
@@ -139,7 +132,7 @@ function Factions(props) {
         </p>
       </div>
     </div>
-    <div className="w3-half w3-container">
+    <div className="w3-half w3-container w3-content w3-center">
       <div className="">
         <h2>Florida</h2>
         <img src="zombie.png" style={{ width: "45%" }} />
@@ -159,8 +152,6 @@ function Factions(props) {
 
   <div className="w3-container w3-content w3-center w3-black"
       style={{ maxWidth: 1500  }} >
-    
-         
               <h2 className="w3-padding-32 w3-wide">
                    The NoNo Zone
                 </h2>
